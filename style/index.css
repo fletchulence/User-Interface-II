@@ -18,8 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-/* 	border: 0;
- */	font-size: 100%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -27,9 +26,6 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
-/* body {
-	line-height: 1; */
 }
 ol, ul {
 	list-style: none;
@@ -53,11 +49,9 @@ table {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid grey;
-}
-section{
-    padding: 5% 0;
-}
+/*     border: 1px solid grey;
+ */}
+
 
 /* general styles */
 html{
@@ -80,18 +74,10 @@ p{
     font-size: 2rem;
     font-family: 'Qwigley', cursive;
 }
-
-/* top section */
-.top{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 40%;
-}
-
-
-
 /* navigations adn A's */
+header{
+    background-color: mediumseagreen;
+}
 nav{
     display: flex;
     margin: 1% 0;
@@ -105,30 +91,41 @@ a {
     color:black;  
     justify-content: center;
     border: 1px solid black;
-    
-    
+    text-decoration: none;
+    font-family: monospace;
 }
 a:hover{
     background-color: mediumseagreen;
     color: midnightblue;
 }
 
+
+/* top section */
+.top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 40%;
+}
+.intro{
+    height:auto;
+    width:auto;
+}
+
 /* background image */
 .bgimg{
     height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('../images/IMG_2668.JPG');
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-color: #cccccc;
-    background-size: 100%;
-    margin-top: 0;
+    background-size: cover;
+ 
 }
 
-header{
-    background-color: mediumseagreen;
-}
 
-/* footer floating area */
+/* footer section styles  */
 footer{
     background-color: rgb(161, 137, 161, 0.5);
     margin-bottom: 0;
@@ -145,56 +142,34 @@ footer{
     width: 50%;
     height: auto;
 }
-.intro{
-    height:auto;
-    width:auto;
-}
 
+/* bottom section styles */
 .bottom{
-    display:flex;
-    margin: 50% 0;
-    margin-left: 0;
+    margin-top: 50%;
     width: 100%;
     /*margin-top: 50%;*/
     padding-bottom: 12%; 
     background-color: mediumseagreen;
 }
-
-.pics{
+.container{
     display: flex;
-    justify-content: flex-start;
-    padding: 1%;
-    
-
-/*     align-content: space-between;
- */    width: 60%;
-
+    flex-flow: row wrap;
+    width: 100%;
 }
-.sml_img{
-    background-image: url('../images/IMG_0463.JPG');
-    background-position: center;
-
-    height: 50vh;
-    width: 100vw;
- }
 .paragraph{
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
-    width: 20vw;
-    height: 50vh;
-
-}
-.paragraph p{
-    display: flex;
-    align-items: flex-end;
-   
-
-/*     display: flex;
-    align-items:center;
-    justify-content: flex-end; */
-
+    align-self: center;
     margin-left: auto;
-    margin-right: 2%;
+    margin-right: 5%;
+    width: 20%;
 }
+.sml_img{
+    margin: 1%;
+    background-image: url('../images/IMG_0463.JPG');
+    background-position: center;
+    height: 30vh;
+    width: 15vw;
+ }
+
+
