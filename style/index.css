@@ -55,10 +55,10 @@ table {
     max-width: 100%;
     border: 1px solid grey;
 }
-/* section{
+section{
     padding: 5% 0;
 }
- */
+
 /* general styles */
 html{
     font-size: 62.5%;
@@ -76,11 +76,9 @@ h2{
     font-size: 7rem;
     font-family: 'Qwigley', cursive;
 }
-.talkie p{
+p{
     font-size: 2rem;
     font-family: 'Qwigley', cursive;
-    
-
 }
 
 /* top section */
@@ -114,22 +112,21 @@ a:hover{
     background-color: mediumseagreen;
     color: midnightblue;
 }
+
+/* background image */
 .bgimg{
-    height: 100vh;
-    margin-bottom: 0;
+    height: 120vh;
     background-image: url('../images/IMG_2668.JPG');
     background-repeat: no-repeat;
     background-position: bottom;
     background-color: #cccccc;
     background-size: 100%;
+    margin-top: 0;
 }
 
 header{
     background-color: mediumseagreen;
-    margin-bottom: 50%;
 }
-
-
 
 /* footer floating area */
 footer{
@@ -141,35 +138,63 @@ footer{
     bottom: 0;
     width: 100%;
     height: 15%;
+    align-items: center;
     justify-content: center;
 }
 #contact {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+.intro{
+    height:auto;
+    width:auto;
 }
 
-.lower{
+.bottom{
     display:flex;
-    justify-content: space-between;
-    margin-top: 50%;
-    margin-bottom: 0;
-    padding-bottom: 15%;
+    margin: 50% 0;
+    margin-left: 0;
+    width: 100%;
+    /*margin-top: 50%;*/
+    padding-bottom: 12%; 
+    background-color: mediumseagreen;
+}
+
+.pics{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1%;
+    
+
+/*     align-content: space-between;
+ */    width: 60%;
+
 }
 .sml_img{
-    display: flex;
     background-image: url('../images/IMG_0463.JPG');
     background-position: center;
-    justify-content: flex-start;
+
     height: 50vh;
     width: 100vw;
-    margin: 1% 1%;
-}
+ }
 .paragraph{
     display: flex;
-    font-size: 50%;
+    flex-direction: row;
     justify-content: flex-end;
-    width: 15%;
-    margin: auto 5%;
+    align-items: center;
+    width: 20vw;
+    height: 50vh;
+
+}
+.paragraph p{
+    display: flex;
+    align-items: flex-end;
+   
+
+/*     display: flex;
+    align-items:center;
+    justify-content: flex-end; */
+
+    margin-left: auto;
+    margin-right: 2%;
 }
