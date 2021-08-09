@@ -49,8 +49,8 @@ table {
     padding: 0;
     margin: 0;
     max-width: 100%;
-/*     border: 1px solid grey;
- */}
+    border: 1px solid grey;
+}
 
 
 /* general styles */
@@ -85,11 +85,10 @@ nav{
 }
 a {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     padding: 1% 5%;    
     background-color: grey; 
     color:black;  
-    justify-content: center;
     border: 1px solid black;
     text-decoration: none;
     font-family: monospace;
@@ -105,23 +104,22 @@ a:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     height: 40%;
 }
 .intro{
     height:auto;
-    width:auto;
+    width:80%;
 }
 
 /* background image */
 .bgimg{
     height: 120vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     background-image: url('../images/IMG_2668.JPG');
     background-repeat: no-repeat;
     background-size: cover;
- 
 }
 
 
@@ -154,7 +152,7 @@ footer{
 .container{
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    width: 80%;
 }
 .paragraph{
     display: flex;
@@ -172,4 +170,11 @@ footer{
     width: 15vw;
  }
 
+/* for the 800px just fix the things that go wonkey */
+@media (max-width: 800px){
 
+}
+
+@media (min-width: 500px){
+
+}
