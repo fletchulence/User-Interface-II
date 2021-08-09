@@ -181,11 +181,8 @@ footer{
 @media (max-width: 800px){
     .bottom{
         padding-bottom: 15%;
+        margin-top: -20;
     }
-    .sml_img{
-
-    }
-
 }
 
 @media (min-width: 500px){
