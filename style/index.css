@@ -97,6 +97,9 @@ a:hover{
     background-color: mediumseagreen;
     color: midnightblue;
 }
+section{
+    background-color: mediumseagreen;
+}
 
 
 /* top section */
@@ -131,7 +134,7 @@ a:hover{
 footer{
     background-color: rgb(161, 137, 161, 0.5);
     margin-bottom: 0;
-    display:flex;
+    display: flex;
     z-index: 999;
     position: fixed;
     bottom: 0;
@@ -140,10 +143,13 @@ footer{
     align-items: center;
     justify-content: center;
 }
-#contact {
+#contact{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align:;
     width: 50%;
-    height: auto;
 }
+
 
 /* bottom section styles */
 .bottom{
@@ -185,6 +191,35 @@ footer{
     }
 }
 
-@media (min-width: 500px){
+@media (max-width: 500px){
+    h1{
+        font-size: 6.5rem;
+    }
+    h2{
+        font-size: 5rem;
+    }
+    nav{
+        flex-direction: column;
+        align-self: center;
+        width: 40%;
+        justify-content: stretch;
+    }
+    .bgimg{
+        height: 50vh;
+        margin: 0 6%;
+        justify-content: center;
+    }
+    .container{
+        width: 100%;
+        margin: 2%;
+        justify-content: space-evenly;
+    }
+    .sml_img{
+        width: 40%;
+    }
+    .paragraph{
+        width: 80%;
+        margin-bottom: 15%;
+    }
 
 }
